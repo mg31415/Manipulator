@@ -68,14 +68,14 @@ Where <span class="math inline"><em>θ</em></span> is the rotation around Z, d t
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">q3</td>
 <td style="text-align: center;">0</td>
-<td style="text-align: center;">a3</td>
-<td style="text-align: center;">??</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">90</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">q4</td>
 <td style="text-align: center;">0</td>
-<td style="text-align: center;">a4</td>
+<td style="text-align: center;">a3+a4</td>
 <td style="text-align: center;">0</td>
 </tr>
 </tbody>
