@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="" />
-  <title> Manipulator</title>
+
  
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -13,7 +13,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">[something something] manipulator</h1>
+<h1 class="title"> Manipulator</h1>
 <p class="author"></p>
 </header>
 <h1 id="introduction">Introduction</h1>
