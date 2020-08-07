@@ -77,7 +77,7 @@ Hence, the degrees of freedom(dof) = 4</p>
 
 <h1 id="control">Control</h1>
 <h2 id="manual-control">Manual control</h2>
-<p>1- On rasppery-pi 3 using Tkinter GUI we can control each joint to get the desired position and orientation , or choose  specific point in space or even make incremental changes in the coordinates. <br />
+<p>1- On rasppery-pi 3 using Tkinter GUI we can control each joint to get the desired position and orientation , or choose  specific point in space or even make incremental changes in the coordinates.(IK not working yet) <br />
   
   <img src="gui.png" id="gui" alt="" />
   
