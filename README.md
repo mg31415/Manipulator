@@ -69,17 +69,17 @@ Hence, the degrees of freedom(dof) = 4</p>
 </tbody>
 </table>
 <p><span>Angles are in degrees and displacements in mm</span></p>
-<img src="TM.png" id="TM" alt="" />
+<img src="imgs/TM.png" id="TM" alt="" />
 <h1 id="visualization">visualization </h1>
 <p> Now that we have the DH paramters  we can easily derive the transformation matrices with some numpy arrays and then we can visualize the frames as a 3d scatter plot using plotly. </p>
-<img src="viz.png" id="viz" alt="" />
+<img src="imgs/viz.png" id="viz" alt="" />
 
 
 <h1 id="control">Control</h1>
 <h2 id="manual-control">Manual control</h2>
 <p>1- On rasppery-pi 3 using Tkinter GUI we can control each joint to get the desired position and orientation , or choose  specific point in space or even make incremental changes in the coordinates.(IK not working yet) <br />
   
-  <img src="gui.png" id="gui" alt="" />
+  <img src="imgs/gui.png" id="gui" alt="" />
   
   
 2- On arduino using potentiometers mounted on a small 3d printed manipulator model.</p>
