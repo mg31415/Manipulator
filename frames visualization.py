@@ -42,20 +42,20 @@ def TRZ(phi,t):
 
 def zxy():
     
-    T0_1=TRZ(q[1],[0,0,a1])@TRX(90,t0)
-    T0_2=TRZ(q[1],[0,0,a1])@TRX(90,t0)@TRZ(q[2],[a2,0,0])
-    T0_3=TRZ(q[1],[0,0,a1])@TRX(90,t0)@TRZ(q[2],[a2,0,0])@TRZ(q[3],t0)@TRX(90,t0)
-    T0_4=TRZ(q[1],[0,0,a1])@TRX(90,t0)@TRZ(q[2],[a2,0,0])@TRZ(q[3],t0)@TRX(90,t0)@TRZ(q[4],[a3+a4,0,0])
+    T0_1=TRZ(q[1],[0,0,a1])@TRX(90,t0) #transformation matrix from frame0 to frame 1
+    T0_2=TRZ(q[1],[0,0,a1])@TRX(90,t0)@TRZ(q[2],[a2,0,0]) #transformation matrix from frame0 to frame 2
+    T0_3=TRZ(q[1],[0,0,a1])@TRX(90,t0)@TRZ(q[2],[a2,0,0])@TRZ(q[3],t0)@TRX(90,t0)#transformation matrix from frame0 to frame 3
+    T0_4=TRZ(q[1],[0,0,a1])@TRX(90,t0)@TRZ(q[2],[a2,0,0])@TRZ(q[3],t0)@TRX(90,t0)@TRZ(q[4],[a3+a4,0,0]) #transformation matrix from frame0 to frame 4
     
-    p0=np.array([0,0,0])
-    p1=np.around(T0_1[:3,3:4])
-    p2=np.around(T0_2[:3,3:4])
-    p3=np.around(T0_3[:3,3:4])
-    p4=np.around(T0_4[:3,3:4])
+    p0=np.array([0,0,0])       #frame0 origin
+    p1=np.around(T0_1[:3,3:4]) #frame1 origin
+    p2=np.around(T0_2[:3,3:4]) #frame2 origin
+    p3=np.around(T0_3[:3,3:4]) #frame3 origin
+    p4=np.around(T0_4[:3,3:4]) #frame4 origin
 
-    x=[int(p0[0]),int(p1[0]),int(p2[0]),int(p3[0]),int(p4[0])]
-    y=[int(p0[1]),int(p1[1]),int(p2[1]),int(p3[1]),int(p4[1])]
-    z=[int(p0[2]),int(p1[2]),int(p2[2]),int(p3[2]),int(p4[2])]
+    x=[int(p0[0]),int(p1[0]),int(p2[0]),int(p3[0]),int(p4[0])]  #x array of all frames
+    y=[int(p0[1]),int(p1[1]),int(p2[1]),int(p3[1]),int(p4[1])]  #y array of all frames
+    z=[int(p0[2]),int(p1[2]),int(p2[2]),int(p3[2]),int(p4[2])]  #z array of all frames
     return z,x,y
     
 
@@ -77,7 +77,7 @@ f = go.FigureWidget(
 
 
 
-
+#upadting angles and positions each time the slider moves
 def update_q1(q1):
     q[1]=q1
     f.data[0].z=zxy()[0]
