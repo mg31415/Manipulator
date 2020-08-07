@@ -70,7 +70,9 @@ Hence, the degrees of freedom(dof) = 4</p>
 </table>
 <p><span>Angles are in degrees and displacements in mm</span></p>
 <img src="TM.png" id="TM" alt="" />
-    
+<h1 id="visualization">visualization </h1>   
+<img src="viz.png" id="viz" alt="" />
+
 
 <h1 id="control">Control</h1>
 <h2 id="manual-control">Manual control</h2>
