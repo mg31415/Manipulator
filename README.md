@@ -17,7 +17,7 @@
 </header>
 <h1 id="kinematic-diagram">Kinematic diagram</h1>
 <figure>
-<img src="diagram.jpg" id="diagram" alt="" /><figcaption>kinematics chain diagram.</figcaption>
+<img src="imgs/diagram.jpg" id="diagram" alt="" /><figcaption>kinematics chain diagram.</figcaption>
 </figure>
 <h1 id="degrees-of-freedom">Degrees of freedom</h1>
 <p>The number of degrees of freedom of the manipulator can be calculated using Grübler’s formula which states:<br />
