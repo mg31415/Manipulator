@@ -70,7 +70,8 @@ Hence, the degrees of freedom(dof) = 4</p>
 </table>
 <p><span>Angles are in degrees and displacements in mm</span></p>
 <img src="TM.png" id="TM" alt="" />
-<h1 id="visualization">visualization </h1>   
+<h1 id="visualization">visualization </h1>
+<p> now that we have the DH paramters  we can easly derive the transformation matrices with some numpy arrays and then we can visualize the frames as a 3d scatter plot using plotly. </p>
 <img src="viz.png" id="viz" alt="" />
 
 
