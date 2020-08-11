@@ -1,16 +1,18 @@
- #PWM slider
-
+#PWM slider
+import pyfirmata
 from tkinter import *
-#import RPi.GPIO as GPIO
-import time
 
-#GPIO.setmode(GPIO.BCM)
-#GPIO.setup(18, GPIO.OUT)
-#pwm = GPIO.PWM(18, 100)
-#pwm.start(5)
+import time
+board = pyfirmata.Arduino("/dev/ttyACM0")
+it = pyfirmata.util.Iterator(board)
+it.start()
+
+servo = board.get_pin('d:11:s')
+
 
 class App:
     
+
 
         
     
@@ -80,36 +82,33 @@ class App:
         print (position.get())
     
     def joint1(self, angle):
-        duty = float(angle) / 10.0 + 2.5
-        #pwm.ChangeDutyCycle(duty)
+        servo.write(angle)
+        
         q1= angle
         print ("q1 is",q1)
        
          
     def joint2(self, angle):
-        duty = float(angle) / 10.0 + 2.5
-        #pwm.ChangeDutyCycle(duty)
+       
+        
         q2= angle
         print ("q2 is",q2)
        
          
     def joint3(self, angle):
-        duty = float(angle) / 10.0 + 2.5
-        #pwm.ChangeDutyCycle(duty)
+        
         q3= angle
         print ("q3 is",q3)
        
          
     def joint4(self, angle):
-        duty = float(angle) / 10.0 + 2.5
-        #pwm.ChangeDutyCycle(duty)
+        
         q4=angle
         print ("q4 is",q4)
         
        
     def joint5(self, angle):
-        duty = float(angle) / 10.0 + 2.5
-        #pwm.ChangeDutyCycle(duty)
+        
         q5=angle
         print ("q5 is",q5)     
     
