@@ -73,8 +73,18 @@ Hence, the degrees of freedom(dof) = 4</p>
 <h1 id="visualization">visualization </h1>
 <p> Now that we have the DH paramters  we can easily derive the transformation matrices with some numpy arrays and then we can visualize the frames as a 3d scatter plot using plotly. </p>
 <img src="imgs/viz.png" id="viz" alt="" />
+<h1 id="Dependencies">Dependencies</h1>
 
+  <p> run these command in your terminal or command line, if you don't have   <a href="https://pip.pypa.io/en/stable/installing/">pip</a>, install it first.
+  <p> numpy: pip install numpy <br />
+  <p> pandas: pip install pandas <br/>
+  <p> plotly: pip install plotly<br/>
+  <p> pyFirmata: pip install pyfirmata <br/>
+    
+  <p> Make sure to change "from tkinter import *" to "from Tkinter import * " if you are using windows. <br/>
 
+    
+    
 <h1 id="control">Control</h1>
 <h2 id="manual-control">Manual control</h2>
 <p>1- using pyFirmata's Python interface for the Firmata protocol i managed to control the arduino with tkinter GUI and control each joint to get the desired position and orientation, or choose  specific point in space or even make incremental changes in the coordinates.(IK not working yet) <br />
