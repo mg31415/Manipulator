@@ -77,7 +77,7 @@ Hence, the degrees of freedom(dof) = 4</p>
 
 <h1 id="control">Control</h1>
 <h2 id="manual-control">Manual control</h2>
-<p>1- On rasppery-pi 3 using Tkinter GUI we can control each joint to get the desired position and orientation , or choose  specific point in space or even make incremental changes in the coordinates.(IK not working yet) <br />
+<p>1- using pyFirmata's Python interface for the Firmata protocol i managed to control the arduino with tkinter GUI and control each joint to get the desired position and orientation, or choose  specific point in space or even make incremental changes in the coordinates.(IK not working yet) <br />
   
   <img src="imgs/gui.png" id="gui" alt="" />
   
