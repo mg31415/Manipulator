@@ -76,10 +76,10 @@ Hence, the degrees of freedom(dof) = 4</p>
 <h1 id="Dependencies">Dependencies</h1>
 
   <p> run these command in your terminal or command line, if you don't have   <a href="https://pip.pypa.io/en/stable/installing/">pip</a>, install it first.
-  <p> numpy: pip install numpy <br />
-  <p> pandas: pip install pandas <br/>
-  <p> plotly: pip install plotly<br/>
-  <p> pyFirmata: pip install pyfirmata <br/>
+  <p> pip install numpy <br />
+  <p> pip install pandas <br/>
+  <p> pip install plotly<br/>
+  <p> pip install pyfirmata <br/>
     
   <p> Make sure to change "from tkinter import *" to "from Tkinter import * " if you are using windows. <br/>
 
