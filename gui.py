@@ -7,8 +7,14 @@ board = pyfirmata.Arduino("/dev/ttyACM0")
 it = pyfirmata.util.Iterator(board)
 it.start()
 
-servo = board.get_pin('d:11:s')
+servo1 = board.get_pin('d:11:s')
 
+#servo2 = board.get_pin('d:11:s')
+#servo3 = board.get_pin('d:11:s')
+#servo4 = board.get_pin('d:11:s')
+#servo5 = board.get_pin('d:11:s')
+
+repeat =[]
 
 class App:
     
@@ -19,7 +25,6 @@ class App:
 
     def __init__(self, master):
         frame = Frame(master)
-        
         
         scale1 = Scale(from_=0, to=180,
               orient=HORIZONTAL, command=self.joint1,label="joint1",activebackground="green")
@@ -76,15 +81,21 @@ class App:
         go2position = Button(text ="Go to position",command=self.gtposition(position))
         go2position.place(x = 70,y = 330)#command=smth
         
+        repeat = Button(text ="repeat",command=self.repeatit)
+        repeat.place(x = 500,y = 500 )
+        
+        reset = Button(text ="reset",command=self.resetit)
+        reset.place(x = 450,y = 500 )
+        
         
         
     def gtposition(self,position):
         print (position.get())
     
     def joint1(self, angle):
-        servo.write(angle)
-        
+        servo1.write(angle)
         q1= angle
+        repeat.append([servo1,q1])
         print ("q1 is",q1)
        
          
@@ -92,26 +103,40 @@ class App:
        
         
         q2= angle
+        repeat.append([servo2,q2])
         print ("q2 is",q2)
        
          
     def joint3(self, angle):
         
         q3= angle
+        repeat.append([servo3,q3])
         print ("q3 is",q3)
        
          
     def joint4(self, angle):
         
         q4=angle
+        repeat.append([servo4,q4])
         print ("q4 is",q4)
         
        
     def joint5(self, angle):
         
         q5=angle
+        repeat.append([servo5,q5])
         print ("q5 is",q5)     
     
+    def repeatit(self):
+        for i in repeat:
+            i[0].write(i[1])
+            time.sleep(.20)
+            print (i[1])
+        
+     
+    def resetit(self):
+        
+        repeat.clear()
         
 root = Tk()
 root.wm_title('Joint Control')
