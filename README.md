@@ -20,7 +20,7 @@
 <img src="imgs/diagram.jpg" id="diagram" alt="" /><figcaption>kinematics chain diagram.</figcaption>
 </figure>
 
-<h1 id="denavithartenberg-parameters">Denavit–Hartenberg parameters</h1>
+<h1 id="denavithartenberg-parameters">Denavit–Hartenberg parameters/caution this is for 4dof arm, haven't updated this yet</h1>
 <p>Below table with the parameters, Where <span class="math inline"><em>θ</em></span> is the rotation around Z, d is the translation in Z, a is the translation in X, and <span class="math inline"><em>α</em></span> is rotation around X<br />
 </p>
 <table>
