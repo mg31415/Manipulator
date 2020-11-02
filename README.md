@@ -15,10 +15,7 @@
 <h1 class="title">Manipulator</h1>
 <p class="author"></p>
 </header>
-  
-  <video width="640" height="320" autoplay>
-  <source src="imgs/manipulator.mp4" type="video/mp4">
-</video>
+<img src="imgs/manp.gif" id="manp" alt="" />
 
 <h1 id="kinematic-diagram">Kinematic diagram</h1>
 <figure>
