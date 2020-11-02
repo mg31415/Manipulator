@@ -19,11 +19,7 @@
 <figure>
 <img src="imgs/diagram.jpg" id="diagram" alt="" /><figcaption>kinematics chain diagram.</figcaption>
 </figure>
-<h1 id="degrees-of-freedom">Degrees of freedom</h1>
-<p>The number of degrees of freedom of the manipulator can be calculated using Grübler’s formula which states:<br />
-dof = m(N - 1 - J)+<span class="math inline">$\sum_{i=1}^{j} f_i$</span><br />
-where N=5 links, as ground is also regarded as a link, J = 4 joints, m = 6 for spatial mechanisms, and the sum of freedoms provided by each joint= 4<br />
-Hence, the degrees of freedom(dof) = 4</p>
+
 <h1 id="denavithartenberg-parameters">Denavit–Hartenberg parameters</h1>
 <p>Below table with the parameters, Where <span class="math inline"><em>θ</em></span> is the rotation around Z, d is the translation in Z, a is the translation in X, and <span class="math inline"><em>α</em></span> is rotation around X<br />
 </p>
@@ -70,8 +66,9 @@ Hence, the degrees of freedom(dof) = 4</p>
 </table>
 <p><span>Angles are in degrees and displacements in mm</span></p>
 <img src="imgs/TM.png" id="TM" alt="" />
-<h1 id="visualization">visualization </h1>
-<p> Now that we have the DH paramters  we can easily derive the transformation matrices with some numpy arrays and then we can visualize the frames as a 3d scatter plot using plotly. </p>
+
+
+
 <img src="imgs/viz.png" id="viz" alt="" />
 <h1 id="Dependencies">Dependencies</h1>
 
