@@ -88,8 +88,10 @@
   
   <img src="imgs/gui.png" id="gui" alt="" />
   
-  
-2- On arduino using potentiometers mounted on a small 3d printed manipulator model.</p>
+<h1 id="electroni○s">electronics</h1>
+<p> to spare myself the agony of connecting all these wires i made an arduino sheild for the servos </p>
+ <img src="imgs/shield.jpg" id="shield" alt="" />
+
 <h1 id="Resources">Resources</h1>
 <p><span>[1]</span> F. C. Park., K. M. Lynch INTRODUCTION TO ROBOTICS MECHANICS, PLANNING, AND CONTROL.<br />
 <span>[2]</span> Sodemann, A. Robotics1. Retrieved from <a href="http://www.robogrok.com./Robotics_1.php">http://www.robogrok.com./Robotics_1.php</a></p>
